@@ -1,0 +1,89 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../assets/crayon-flowers.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(42, 52, 44, 0.28) 0%,
+    rgba(52, 63, 54, 0.36) 60%,
+    rgba(38, 50, 40, 0.58) 100%
+  );
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  padding: 0 var(--space-md);
+  color: var(--color-text-on-dark);
+}
+
+.tagline {
+  font-family: var(--family-body);
+  font-size: var(--text-md);
+  letter-spacing: 0.1em;
+  opacity: 0.9;
+  margin-bottom: var(--space-sm);
+  text-transform: uppercase;
+}
+
+.heading {
+  font-family: var(--family-display);
+  font-size: clamp(2.5rem, 6vw, var(--text-4xl));
+  line-height: 1.2;
+  margin-bottom: var(--space-md);
+}
+
+.highlight {
+  color: #bbc8b4;
+}
+
+.subheading {
+  font-family: var(--family-body);
+  font-size: var(--text-lg);
+  line-height: 1.8;
+  opacity: 0.92;
+  margin-bottom: var(--space-lg);
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: var(--space-lg);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  font-family: var(--family-body);
+  font-size: var(--text-md);
+  background: var(--color-secondary);
+  color: var(--color-primary-dark);
+  padding: 0.875rem 2.25rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+  box-shadow: var(--shadow-md);
+}
+
+.btnPrimary:hover {
+  background: #d4c4a8;
+  transform: translateY(-2px);
+}
+
