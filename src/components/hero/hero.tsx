@@ -10,7 +10,7 @@ export function Hero() {
         <h1 className={styles.heading}>
           הורות מתוך
           <br />
-          <span className={styles.highlight}>שלווה וביטחון</span>
+          שלווה וביטחון
         </h1>
         <p className={styles.subheading}>
           הורים יקרים, אם אתם מתמודדים עם אתגרים כמו בעיות התנהגות, קשיים בקשר
