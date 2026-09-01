@@ -31,40 +31,15 @@
   box-shadow: var(--shadow-lg);
 }
 
-.badge {
-  position: absolute;
-  bottom: -1rem;
-  left: -1rem;
-  background: var(--color-primary);
-  color: var(--color-text-on-dark);
-  padding: 0.75rem 1.5rem;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-md);
-}
-
-.badgeText {
-  font-family: var(--family-display);
-  font-size: var(--text-md);
-}
-
 .textCol {
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
 }
 
-.eyebrow {
-  font-family: var(--family-body);
-  font-size: var(--text-sm);
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--color-primary);
-  font-weight: 700;
-}
-
 .heading {
   font-family: var(--family-display);
-  font-size: var(--text-3xl);
+  font-size: clamp(1.75rem, 3.2vw, var(--text-3xl));
   color: var(--color-primary-dark);
   line-height: 1.2;
 }
@@ -73,7 +48,7 @@
   font-family: var(--family-body);
   font-size: var(--text-md);
   color: var(--color-text);
-  line-height: 1.85;
+  line-height: 1.7;
 }
 
 .credentials {
@@ -97,26 +72,6 @@
 .credentialIcon {
   flex-shrink: 0;
   color: var(--color-primary);
-}
-
-.cta {
-  display: inline-block;
-  align-self: flex-start;
-  font-family: var(--family-body);
-  font-size: var(--text-md);
-  background: var(--color-primary);
-  color: var(--color-text-on-dark);
-  padding: 0.875rem 2rem;
-  border-radius: var(--radius-full);
-  font-weight: 700;
-  text-decoration: none;
-  transition: background 0.2s, transform 0.2s;
-  margin-top: var(--space-xs);
-}
-
-.cta:hover {
-  background: var(--color-primary-dark);
-  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {

@@ -19,7 +19,6 @@ export function About() {
         </div>
 
         <div className={styles.textCol}>
-          <span className={styles.eyebrow}></span>
           <h2 className={styles.heading}>שלום, אני ליאן גייר</h2>
           <p className={styles.body}>
             כמדריכת הורים בגישת אדלר, העוגן המקצועי שמנחה אותי בכל מפגש הוא פשוט: יחסים לפני הכל. אני מאמינה שילד שמרגיש

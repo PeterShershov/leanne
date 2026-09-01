@@ -1,6 +1,8 @@
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100svh - var(--header-height));
+  padding-block: var(--space-lg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,7 +42,7 @@
 
 .heading {
   font-family: var(--family-display);
-  font-size: clamp(2.5rem, 6vw, var(--text-4xl));
+  font-size: clamp(2rem, min(6vw, 10vh), var(--text-4xl));
   line-height: 1.2;
   margin-bottom: var(--space-md);
 }
@@ -57,7 +59,6 @@
   margin-bottom: var(--space-lg);
   max-width: 600px;
   margin-inline: auto;
-  margin-bottom: var(--space-lg);
 }
 
 .actions {
@@ -87,3 +88,31 @@
   transform: translateY(-2px);
 }
 
+/* Landscape phones: the viewport is short, so tighten the vertical rhythm
+ * rather than letting the section scroll the CTA out of view. */
+@media (max-height: 520px) {
+  .hero {
+    padding-block: var(--space-sm);
+  }
+
+  .tagline {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-xs);
+  }
+
+  .heading {
+    font-size: clamp(1.75rem, min(6vw, 9vh), var(--text-2xl));
+    margin-bottom: var(--space-sm);
+  }
+
+  .subheading {
+    font-size: var(--text-base);
+    line-height: 1.6;
+    margin-bottom: var(--space-sm);
+  }
+
+  .btnPrimary {
+    font-size: var(--text-base);
+    padding: 0.625rem 1.75rem;
+  }
+}

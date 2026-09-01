@@ -20,6 +20,9 @@
   --family-display: 'Assistant', sans-serif;
   --family-body: 'Assistant', sans-serif;
 
+  /* Layout */
+  --header-height: 70px;
+
   /* Spacing */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
