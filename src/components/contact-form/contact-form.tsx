@@ -1,20 +1,22 @@
 import { IconBrandWhatsapp } from "@tabler/icons-react";
-import { WHATSAPP_URL, PHONE, EMAIL } from "~/constants";
+import { buildWhatsappUrl, PHONE, EMAIL } from "~/constants";
+import { useLanguage } from "~/i18n/use-language";
 import styles from "./contact-form.module.css";
 
 export function ContactForm() {
+  const { t } = useLanguage();
+  const whatsappUrl = buildWhatsappUrl(t.whatsapp.message);
+
   return (
     <section id="contact" className={styles.section}>
       <div className={styles.container}>
-        <span className={styles.eyebrow}>צרו קשר</span>
-        <h2 className={styles.heading}>אשמח לשמוע מכם</h2>
-        <p className={styles.body}>
-          הדרך הכי מהירה להגיע אליי היא בוואטסאפ. כתבו לי מה מעסיק אתכם ואחזור אליכם בהקדם.
-        </p>
+        <span className={styles.eyebrow}>{t.contact.eyebrow}</span>
+        <h2 className={styles.heading}>{t.contact.heading}</h2>
+        <p className={styles.body}>{t.contact.body}</p>
 
-        <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className={styles.ctaBtn}>
+        <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className={styles.ctaBtn}>
           <IconBrandWhatsapp size={24} stroke={2} />
-          <span>שלחו לי הודעה בוואטסאפ</span>
+          <span>{t.contact.ctaWhatsapp}</span>
         </a>
 
         <div className={styles.contactCard}>
