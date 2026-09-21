@@ -4,7 +4,8 @@ export const translations = {
   he: {
     meta: {
       title: "ליאן גייר - הדרכת הורים בגישת אדלר",
-      description: "הדרכת הורים מקצועית בגישת אדלר. פגישות פרטניות לבניית קשר אמיתי עם ילדיכם.",
+      description:
+        "הדרכת הורים מקצועית בגישת אדלר. פגישות פרטניות לבניית קשר אמיתי עם ילדיכם.",
     },
     nav: {
       logoName: "ליאן גייר",
@@ -58,11 +59,13 @@ export const translations = {
         },
         {
           title: "עידוד כדרך חיים",
-          description: "העידוד הוא כלי מרכזי  וחשוב. נלמד להבחין בין שבח לעידוד ואיך לחזק את הביטחון הפנימי של הילד.",
+          description:
+            "העידוד הוא כלי מרכזי  וחשוב. נלמד להבחין בין שבח לעידוד ואיך לחזק את הביטחון הפנימי של הילד.",
         },
         {
           title: "הגיון טבעי ולוגי",
-          description: "נלמד להשתמש בתוצאות טבעיות ולוגיות במקום עונשים, שיטה שמאפשרת לילד ללמוד מהניסיון שלו עצמו.",
+          description:
+            "נלמד להשתמש בתוצאות טבעיות ולוגיות במקום עונשים, שיטה שמאפשרת לילד ללמוד מהניסיון שלו עצמו.",
         },
       ],
     },
@@ -77,12 +80,14 @@ export const translations = {
         },
         {
           title: "שיפור תקשורת",
-          description: "נלמד שפת תקשורת אפקטיבית שמחזקת את הקשר עם הילד ומפחיתה קונפליקטים יומיומיים.",
+          description:
+            "נלמד שפת תקשורת אפקטיבית שמחזקת את הקשר עם הילד ומפחיתה קונפליקטים יומיומיים.",
           tags: ["הקשבה פעילה", "שיח מכבד", "פחות ריב"],
         },
         {
           title: "חיזוק ביטחון הורי",
-          description: "נעבוד יחד על חיזוק הביטחון שלכם כהורים, בניית גבולות בריאים ויצירת שגרה שמתאימה לכל המשפחה.",
+          description:
+            "נעבוד יחד על חיזוק הביטחון שלכם כהורים, בניית גבולות בריאים ויצירת שגרה שמתאימה לכל המשפחה.",
           tags: ["ביטחון עצמי", "שגרה", "גבולות בריאים"],
         },
       ],
@@ -95,7 +100,7 @@ export const translations = {
     },
     footer: {
       tagline: "הדרכת הורים בגישת אדלר",
-      copyright: (year: number) => `© ${year} ליאן גייר — כל הזכויות שמורות`,
+      copyright: `© 2026 ליאן גייר — כל הזכויות שמורות`,
     },
     whatsapp: {
       ariaLabel: "שלח הודעה בוואטסאפ",
@@ -181,7 +186,8 @@ export const translations = {
         },
         {
           title: "Improving Communication",
-          description: "We'll learn effective communication that strengthens your connection with your child and reduces everyday conflicts.",
+          description:
+            "We'll learn effective communication that strengthens your connection with your child and reduces everyday conflicts.",
           tags: ["Active Listening", "Respectful Dialogue", "Fewer Arguments"],
         },
         {
@@ -200,7 +206,7 @@ export const translations = {
     },
     footer: {
       tagline: "Adlerian Parent Guidance",
-      copyright: (year: number) => `© ${year} Leanne Geyer — All rights reserved`,
+      copyright: `© 2026 Leanne Geyer — All rights reserved`,
     },
     whatsapp: {
       ariaLabel: "Send a WhatsApp message",

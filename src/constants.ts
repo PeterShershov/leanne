@@ -1,4 +1,4 @@
-export const PHONE = "0504489911";
+export const PHONE = "0504489811";
 export const EMAIL = "geyer.leanne@gmail.com";
 
 const WHATSAPP_NUMBER = "972504489811";

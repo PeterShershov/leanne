@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IconMenu2, IconX, IconLeaf, IconLanguage } from "@tabler/icons-react";
+import { IconMenu2, IconX, IconLeaf } from "@tabler/icons-react";
 import { useLanguage } from "~/i18n/use-language";
 import styles from "./navbar.module.css";
 

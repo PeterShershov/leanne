@@ -25,15 +25,15 @@ export function Footer() {
         </nav>
 
         <div className={styles.contact}>
-          <a href="tel:0504489911" className={styles.phoneLink}>
+          <a href="tel:0504489811" className={styles.phoneLink}>
             <IconPhone size={16} />
-            050-4489911
+            050-4489811
           </a>
         </div>
       </div>
 
       <div className={styles.bottom}>
-        <p>{t.footer.copyright(new Date().getFullYear())}</p>
+        <p>{t.footer.copyright}</p>
       </div>
     </footer>
   );

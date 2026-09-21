@@ -10,12 +10,133 @@
       name="description"
       content="הדרכת הורים מקצועית בגישת אדלר. פגישות פרטניות לבניית קשר אמיתי עם ילדיכם."
     />
+
+    <!-- The canonical host is the CNAME domain, so these stay absolute: a
+         github.io preview URL should still point search engines here.
+         scripts/prerender.mjs asserts the canonical matches the sitemap. -->
+    <link rel="canonical" href="https://leanne-parenting.co.il/" />
+
+    <!-- Every CTA on the page is a WhatsApp link, so the shared-link preview is
+         part of the funnel, not an afterthought. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ליאן גייר - הדרכת הורים" />
+    <meta property="og:url" content="https://leanne-parenting.co.il/" />
+    <meta property="og:title" content="ליאן גייר - הדרכת הורים בגישת אדלר" />
+    <meta
+      property="og:description"
+      content="הדרכת הורים מקצועית בגישת אדלר. פגישות פרטניות לבניית קשר אמיתי עם ילדיכם."
+    />
+    <meta
+      property="og:image"
+      content="https://leanne-parenting.co.il/og-image.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="ליאן גייר - מדריכת הורים" />
+    <meta property="og:locale" content="he_IL" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ליאן גייר - הדרכת הורים בגישת אדלר" />
+    <meta
+      name="twitter:description"
+      content="הדרכת הורים מקצועית בגישת אדלר. פגישות פרטניות לבניית קשר אמיתי עם ילדיכם."
+    />
+    <meta
+      name="twitter:image"
+      content="https://leanne-parenting.co.il/og-image.jpg"
+    />
+    <meta name="twitter:image:alt" content="ליאן גייר - מדריכת הורים" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap"
     />
+
+    <!-- Static rather than rendered by React: this describes the business, not
+         the UI, and it has to be in the HTML a crawler gets without running JS.
+         Telephone and service names mirror the visible copy on purpose —
+         search engines discount structured data that the page doesn't back up. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://leanne-parenting.co.il/#business",
+            "name": "ליאן גייר - הדרכת הורים בגישת אדלר",
+            "description": "הדרכת הורים מקצועית בגישת אדלר. פגישות פרטניות לבניית קשר אמיתי עם ילדיכם.",
+            "url": "https://leanne-parenting.co.il/",
+            "image": "https://leanne-parenting.co.il/og-image.jpg",
+            "telephone": "+972-50-448-9811",
+            "email": "geyer.leanne@gmail.com",
+            "areaServed": {
+              "@type": "Country",
+              "name": "IL"
+            },
+            "availableLanguage": ["he", "en"],
+            "founder": { "@id": "https://leanne-parenting.co.il/#leanne" },
+            "provider": { "@id": "https://leanne-parenting.co.il/#leanne" },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "שירותי הדרכת הורים",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "פגישות פרטניות",
+                    "description": "פגישות אישיות המותאמות לצרכים הספציפיים של המשפחה שלכם. נדון בבעיות ההתנהגות ונבנה תכנית פעולה מעשית."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "שיפור תקשורת",
+                    "description": "נלמד שפת תקשורת אפקטיבית שמחזקת את הקשר עם הילד ומפחיתה קונפליקטים יומיומיים."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "חיזוק ביטחון הורי",
+                    "description": "נעבוד יחד על חיזוק הביטחון שלכם כהורים, בניית גבולות בריאים ויצירת שגרה שמתאימה לכל המשפחה."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://leanne-parenting.co.il/#leanne",
+            "name": "ליאן גייר",
+            "jobTitle": "מדריכת הורים בגישת אדלר",
+            "url": "https://leanne-parenting.co.il/",
+            "image": "https://leanne-parenting.co.il/og-image.jpg",
+            "telephone": "+972-50-448-9811",
+            "email": "geyer.leanne@gmail.com",
+            "knowsLanguage": ["he", "en"],
+            "worksFor": { "@id": "https://leanne-parenting.co.il/#business" },
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "degree",
+                "name": "תואר ראשון בחינוך לגיל הרך"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "certification",
+                "name": "מדריכת הורים מוסמכת בגישת אדלר"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
