@@ -17,7 +17,7 @@ const PLACEHOLDER = '<div id="root"></div>';
 const SITE_URL = "https://leanne-parenting.co.il/";
 
 /** Absolute, so it can't be hashed or relative — asserted to exist below. */
-const OG_IMAGE = "og-image.jpg";
+const OG_IMAGE = "og-cover.jpg";
 
 /** Sections we expect to find in the output; a missing one means a broken render. */
 const REQUIRED_IDS = ["about", "adlerian", "services", "contact"];
